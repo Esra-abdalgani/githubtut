@@ -1,0 +1,8 @@
+name: gitInfo 
+on: push
+jobs: 
+  info:
+  runs-on: ubuntu-latest
+  steps:
+    - name: out context
+      run: echo "${{ toJSON(github) }}"
